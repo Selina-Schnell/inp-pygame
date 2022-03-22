@@ -61,12 +61,20 @@ class BaseSprite(pygame.sprite.Sprite):
 
 
 class PlayerSprite(BaseSprite):
+<<<<<<< HEAD
     def __init__(self, game, x, y, **kwargs):
         img_data = {
             'spritesheet': Spritesheet("res/player.png"),
         }
         super().__init__(game, x, y, groups=game.players, layer=1, **img_data, **kwargs)
         self.speed = 3
+=======
+    def __init__(self, game, x, y):
+        super().__init__(game, x, y, groups=game.players, layer=1)
+        self.y_velocity = Config.MAX_GRAVITY
+        self.speed = 10
+        self.standing = False
+>>>>>>> 103c47b58c1b6c0dedc699c4329968dfe10d6a63
         self.color = Config.RED
         self.anim_counter = 0
         self.animation_frames = [0, 32]
@@ -163,6 +171,21 @@ class GroundSprite(BaseSprite):
         self.image.fill(Config.GREEN)
 
 
+<<<<<<< HEAD
+=======
+class Config:
+    WINDOW_WIDTH = 640
+    WINDOW_HEIGHT = 420
+    BLACK = (100, 0, 0)
+    RED = (255, 127, 80)
+    GREEN = (0, 0, 0)
+    GREY = (128, 128, 128)
+    FPS = 30
+    TILE_SIZE = 32
+    MAX_GRAVITY = -3
+
+
+>>>>>>> 103c47b58c1b6c0dedc699c4329968dfe10d6a63
 class Game:
     def __init__(self):
         pygame.init()
@@ -190,7 +213,15 @@ class Game:
         self.ground = pygame.sprite.LayeredUpdates()
         self.players = pygame.sprite.LayeredUpdates()
 
+<<<<<<< HEAD
         self.load_map("maps/level-01.txt")
+=======
+        self.player = PlayerSprite(self, 1, 10)
+        for i in range(20):
+            GroundSprite(self, i, 12)
+        for i in range(5, 8):
+            GroundSprite(self, i, 11)
+>>>>>>> 103c47b58c1b6c0dedc699c4329968dfe10d6a63
 
     def handle_events(self):
         for event in pygame.event.get():
@@ -212,7 +243,7 @@ class Game:
         pygame.display.update()
 
     def game_loop(self):
-        while self.playing:
+        while self.playing:                     #das es unendlich weiter geht müsste dann Falsh setzen              
             self.handle_events()
             self.update()
             self.draw()
