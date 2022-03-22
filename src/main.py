@@ -39,7 +39,7 @@ class PlayerSprite(BaseSprite):
     def __init__(self, game, x, y):
         super().__init__(game, x, y, groups=game.players, layer=1)
         self.y_velocity = Config.MAX_GRAVITY
-        self.speed = 5
+        self.speed = 10
         self.standing = False
         self.color = Config.RED
         self.image.fill(self.color)
@@ -82,9 +82,9 @@ class GroundSprite(BaseSprite):
 class Config:
     WINDOW_WIDTH = 640
     WINDOW_HEIGHT = 420
-    BLACK = (0, 0, 0)
-    RED = (255, 0, 0)
-    GREEN = (0, 255, 0)
+    BLACK = (100, 0, 0)
+    RED = (255, 127, 80)
+    GREEN = (0, 0, 0)
     GREY = (128, 128, 128)
     FPS = 30
     TILE_SIZE = 32
@@ -106,11 +106,11 @@ class Game:
         self.ground = pygame.sprite.LayeredUpdates()
         self.players = pygame.sprite.LayeredUpdates()
 
-        self.player = PlayerSprite(self, 10, 10)
+        self.player = PlayerSprite(self, 1, 10)
         for i in range(20):
             GroundSprite(self, i, 12)
-        for i in range(5, 10):
-            GroundSprite(self, i, 9)
+        for i in range(5, 8):
+            GroundSprite(self, i, 11)
 
     def handle_events(self):
         for event in pygame.event.get():
@@ -126,7 +126,7 @@ class Game:
         pygame.display.update()
 
     def game_loop(self):
-        while self.playing:
+        while self.playing:                     #das es unendlich weiter geht müsste dann Falsh setzen              
             self.handle_events()
             self.update()
             self.draw()
