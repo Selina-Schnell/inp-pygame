@@ -140,21 +140,8 @@ class PlayerSprite(BaseSprite):
 
     def check_collision(self):
         hits = pygame.sprite.spritecollide(self, self.game.ground, False)
-        for hit in hits:
-            if self.is_standing(hit):
-                self.rect.bottom = hit.rect.top
-                break
-            if self.hit_head(hit):
-                self.rect.top = hit.rect.bottom
-                break
-
-        hits = pygame.sprite.spritecollide(self, self.game.ground, False)
-        for hit in hits:
-            hit_dir = hit.rect.x - self.rect.x
-            if hit_dir < 0:
-                self.rect.left = hit.rect.right
-            else:
-                self.rect.right = hit.rect.left
+        if hits: 
+            print("zusammenstoss")
 
 
 class GroundSprite(BaseSprite):
