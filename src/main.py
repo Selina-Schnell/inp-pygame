@@ -20,7 +20,7 @@ class Config:
     WINDOW_HEIGHT = TILE_SIZE * 10
     BLACK = (0, 0, 0)
     RED = (255, 0, 0)
-    GREEN = (0, 0, 0)
+    GREEN = (255, 255, 255)
     GREY = (128, 128, 128)
     WHITE = (255, 255, 255)
     FPS = 30
