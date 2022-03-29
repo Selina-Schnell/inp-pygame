@@ -1,3 +1,5 @@
+from pickle import STOP
+from tracemalloc import stop
 import pygame
 
 import sys
@@ -142,6 +144,7 @@ class PlayerSprite(BaseSprite):
         hits = pygame.sprite.spritecollide(self, self.game.ground, False)
         if hits: 
             print("zusammenstoss")
+            
 
 
 class GroundSprite(BaseSprite):
