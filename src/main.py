@@ -1,5 +1,6 @@
+from asyncore import loop
 from pickle import FALSE, STOP
-from tracemalloc import stop
+from tracemalloc import start, stop
 from turtle import begin_fill
 import pygame
 
@@ -94,14 +95,8 @@ class PlayerSprite(BaseSprite):
 
     def handle_movement(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_LEFT]:
-            self.rect.x = self.rect.x - self.speed
-        if keys[pygame.K_RIGHT]:
-            self.rect.x = self.rect.x + self.speed
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_SPACE]:
             self.rect.y = self.rect.y - self.speed
-        if keys[pygame.K_DOWN]:
-            self.rect.y = self.rect.y + self.speed
         self.update_camera()
 
 
