@@ -1,6 +1,6 @@
-                           b
-   p                      bbb
+                             b 
+                            bbb
             bb               bbb                                      
-           bbbb               bbbb                                                  
+p          bbbb               bbbb                                                  
             bb               bbbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
