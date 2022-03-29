@@ -66,7 +66,7 @@ class PlayerSprite(BaseSprite):
             'spritesheet': Spritesheet("res/player.png"),
         }
         super().__init__(game, x, y, groups=game.players, layer=1, **img_data, **kwargs)
-        self.speed = 3
+        self.speed = 5
         self.color = Config.RED
         self.anim_counter = 0
         self.animation_frames = [0, 32]
