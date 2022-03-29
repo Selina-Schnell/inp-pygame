@@ -1,4 +1,4 @@
-from pickle import STOP
+from pickle import FALSE, STOP
 from tracemalloc import stop
 from turtle import begin_fill
 import pygame
@@ -151,12 +151,8 @@ class PlayerSprite(BaseSprite):
                 self.y_velocity = 0
                 self.rect.top = hit.rect.bottom
                 break
-<<<<<<< HEAD
-            self.game.playing = False          
-=======
-            print("zusammenstoss")
+            self.game.playing = FALSE
 
->>>>>>> faf21cbad030bd3bbda5ecb5b29cb8e937a0d7b0
 
 
 class GroundSprite(BaseSprite):
