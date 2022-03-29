@@ -144,6 +144,7 @@ class PlayerSprite(BaseSprite):
             if self.is_standing(hit):
                 self.rect.bottom = hit.rect.top
                 break
+            print ("zusammenstoss")
             if self.hit_head(hit):
                 self.y_velocity = 0
                 self.rect.top = hit.rect.bottom
