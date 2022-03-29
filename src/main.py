@@ -20,7 +20,7 @@ class Config:
     WINDOW_HEIGHT = TILE_SIZE * 10
     BLACK = (0, 0, 0)
     RED = (255, 0, 0)
-    GREEN = (0, 0, 0)
+    GREEN = (255, 255, 255)
     GREY = (128, 128, 128)
     WHITE = (255, 255, 255)
     FPS = 30
@@ -157,7 +157,7 @@ class Game:
         self.font = pygame.font.Font(None, 30)
         self.screen = pygame.display.set_mode( (Config.WINDOW_WIDTH, Config.WINDOW_HEIGHT) ) 
         self.clock = pygame.time.Clock()
-        self.bg = pygame.image.load("res/bg-small.png")
+        self.bg = pygame.image.load("res/Grill.png")
         self.bg_x = 0
 
     
