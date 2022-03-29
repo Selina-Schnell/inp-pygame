@@ -142,7 +142,14 @@ class PlayerSprite(BaseSprite):
 
     def check_collision(self):
         hits = pygame.sprite.spritecollide(self, self.game.ground, False)
-        if hits: 
+        for hit in hits:
+            if self.is_standing(hit):
+                self.rect.bottom = hit.rect.top
+                break
+            if self.hit_head(hit):
+                self.y_velocity = 0
+                self.rect.top = hit.rect.bottom
+                break
             print("zusammenstoss")
             
 
