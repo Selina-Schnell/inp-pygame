@@ -26,7 +26,7 @@ class Config:
     GREEN = (255, 255, 255)
     GREY = (128, 128, 128)
     WHITE = (255, 255, 255)
-    FPS = 5
+    FPS = 30
     BG_SPEED = -3
 
 
@@ -75,7 +75,7 @@ class PlayerSprite(BaseSprite):
         self.animation_frames = [0, 32]
         self.current_frame = 0
         self.animation_duration = 30
-        self.y_velocity = 0
+        self.y_velocity = 10
         
 
     def animate(self, x_diff):
