@@ -18,7 +18,7 @@ class Spritesheet:
 
 class Config:
     TILE_SIZE = 32
-    WINDOW_WIDTH = TILE_SIZE * 20
+    WINDOW_WIDTH = TILE_SIZE * 15
     WINDOW_HEIGHT = TILE_SIZE * 10
     BLACK = (0, 0, 0)
     RED = (255, 0, 0)
@@ -151,7 +151,7 @@ class PlayerSprite(BaseSprite):
                 self.rect.top = hit.rect.bottom
                 break
             print("zusammenstoss")
-            
+
 
 
 class GroundSprite(BaseSprite):
