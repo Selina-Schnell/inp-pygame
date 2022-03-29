@@ -1,4 +1,4 @@
-from pickle import STOP
+from pickle import FALSE, STOP
 from tracemalloc import stop
 from turtle import begin_fill
 import pygame
@@ -147,6 +147,7 @@ class PlayerSprite(BaseSprite):
             if self.is_standing(hit):
                 self.rect.bottom = hit.rect.top
                 break
+            print ("zusammenstoss")
             if self.hit_head(hit):
                 self.y_velocity = 0
                 self.rect.top = hit.rect.bottom
