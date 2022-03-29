@@ -152,8 +152,7 @@ class PlayerSprite(BaseSprite):
                 self.y_velocity = 0
                 self.rect.top = hit.rect.bottom
                 break
-            self.game.playing = False
-            
+            self.game.playing = False          
 
 
 class GroundSprite(BaseSprite):
