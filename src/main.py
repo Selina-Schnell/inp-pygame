@@ -151,12 +151,8 @@ class PlayerSprite(BaseSprite):
                 self.y_velocity = 0
                 self.rect.top = hit.rect.bottom
                 break
-<<<<<<< HEAD
-            self.game.playing = False          
-=======
-            print("zusammenstoss")
-
->>>>>>> faf21cbad030bd3bbda5ecb5b29cb8e937a0d7b0
+            self.game.playing = False
+            
 
 
 class GroundSprite(BaseSprite):
