@@ -76,6 +76,7 @@ class PlayerSprite(BaseSprite):
         self.animation_frames = [0, 32]
         self.current_frame = 0
         self.animation_duration = 30
+        self.y_velocity = 10
         
 
     def animate(self, x_diff):
@@ -89,6 +90,9 @@ class PlayerSprite(BaseSprite):
 
     
     def update(self):
+        self.rect.x = self.rect.x + self.speed
+        self.rect.y = self.rect.y - self.y_velocity
+        self.y_velocity -= 0.5
         self.handle_movement()
         self.check_collision()
 
@@ -96,7 +100,7 @@ class PlayerSprite(BaseSprite):
     def handle_movement(self):
         keys = pygame.key.get_pressed()
         if keys[pygame.K_SPACE]:
-            self.rect.y = self.rect.y - self.speed
+            self.y_velocity = 10
         self.update_camera()
 
 
