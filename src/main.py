@@ -169,6 +169,7 @@ class Game:
         self.clock = pygame.time.Clock()
         self.bg = pygame.image.load("res/Grill.png")
         self.bg_x = 0
+        self.gameover = False
 
     
     def load_map(self, mapfile):
@@ -193,6 +194,7 @@ class Game:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.playing = False
+                self.gameover = True
 
     def update(self):
         self.all_sprites.update()
@@ -221,7 +223,8 @@ def main():
     g = Game()
     g.new()
 
-    g.game_loop()
+    while not g.gameover:
+        g.game_loop()
 
     pygame.quit()
     sys.exit()
