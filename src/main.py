@@ -1,4 +1,5 @@
 from asyncore import loop
+from distutils.log import error
 from pickle import FALSE, STOP
 from tracemalloc import start, stop
 from turtle import begin_fill
@@ -151,7 +152,7 @@ class PlayerSprite(BaseSprite):
                 self.y_velocity = 0
                 self.rect.top = hit.rect.bottom
                 break
-            self.game.playing = False          
+            self.game.playing = False
 
 
 class GroundSprite(BaseSprite):
@@ -169,7 +170,7 @@ class Game:
         self.clock = pygame.time.Clock()
         self.bg = pygame.image.load("res/Grill.png")
         self.bg_x = 0
-        self.score=20
+        self.score=0
 
     
     def load_map(self, mapfile):
