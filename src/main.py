@@ -1,5 +1,6 @@
+from asyncore import loop
 from pickle import FALSE, STOP
-from tracemalloc import stop
+from tracemalloc import start, stop
 from turtle import begin_fill
 import pygame
 
