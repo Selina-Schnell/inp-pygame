@@ -170,7 +170,7 @@ class Game:
         self.clock = pygame.time.Clock()
         self.bg = pygame.image.load("res/Grill.png")
         self.bg_x = 0
-        self.score=20
+        self.score=0
 
     
     def load_map(self, mapfile):
