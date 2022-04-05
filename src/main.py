@@ -211,7 +211,8 @@ class Game:
         self.all_sprites.draw(self.screen)
         self.score= self.score + 1/Config.FPS
         textsurface= self.font.render (f'{self.score:.0f}', False, Config.BLACK)
-        if 
+        if self.gameover:
+            self.playing= False
         self.screen.blit(textsurface,(32,32))
         pygame.display.update()
 
