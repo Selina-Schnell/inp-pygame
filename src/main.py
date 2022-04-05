@@ -169,7 +169,7 @@ class Game:
         self.clock = pygame.time.Clock()
         self.bg = pygame.image.load("res/Grill.png")
         self.bg_x = 0
-        self.score=0
+        self.score=20
 
     
     def load_map(self, mapfile):
@@ -207,6 +207,9 @@ class Game:
         self.screen.blit(tmp_bg, (second_x, 0))
 
         self.all_sprites.draw(self.screen)
+        self.score=self.score + 1/Config.FPS
+        textsurface= self.font.render(f'{self.score:.0f}', False, Config.BLACK)
+        self.screen.blit(textsurface,(32,32))
         pygame.display.update()
 
     def game_loop(self):
@@ -214,7 +217,7 @@ class Game:
             self.handle_events()
             self.update()
             self.draw()
-            self.score=self.score+1
+            self.score=self.score+0.0001
             self.clock.tick(Config.FPS)
         print(self.score)            
         self.new()
