@@ -184,7 +184,7 @@ class Game:
 
     def new(self):
         self.playing = True
-
+        self.score=0
         self.all_sprites = pygame.sprite.LayeredUpdates()
         self.ground = pygame.sprite.LayeredUpdates()
         self.players = pygame.sprite.LayeredUpdates()
