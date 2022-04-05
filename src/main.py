@@ -1,4 +1,5 @@
 from asyncore import loop
+from distutils.log import error
 from pickle import FALSE, STOP
 from tracemalloc import start, stop
 from turtle import begin_fill
@@ -151,7 +152,7 @@ class PlayerSprite(BaseSprite):
                 self.y_velocity = 0
                 self.rect.top = hit.rect.bottom
                 break
-            self.game.playing = False          
+            self.game.playing = False
 
 
 class GroundSprite(BaseSprite):
