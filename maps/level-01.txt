@@ -1,11 +1,11 @@
-    bbbbb 
-    bbbbbb
-    bbbbbbb
-    bbbbbbb
-    b b b b
-    b b b  b
-    b b b b
-
+    bbbbb         bbbbb 
+    bbbbbb        bbbbbb
+    bbbbbbb       bbbbbbb
+    bbbbbbb       bbbbbbb
+    b b b b       b b b b
+    b b b  b      b b b  b
+    b b b  b      b b b  b
+    b b b b       b b b b
     
     
                                b
