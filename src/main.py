@@ -67,7 +67,7 @@ class BaseSprite(pygame.sprite.Sprite):
 class PlayerSprite(BaseSprite):
     def __init__(self, game, x, y, **kwargs):
         img_data = {
-            'spritesheet': Spritesheet("res/2.0.png"),
+            'spritesheet': Spritesheet("res/player3.png"),
             'width': 32,
             'height': 32
         }
