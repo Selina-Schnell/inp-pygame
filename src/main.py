@@ -1,5 +1,7 @@
 from asyncore import loop
+from email import contentmanager
 from pickle import FALSE, STOP
+from re import X
 from tracemalloc import start, stop
 from turtle import begin_fill
 import pygame
@@ -168,8 +170,11 @@ class Game:
         self.screen = pygame.display.set_mode( (Config.WINDOW_WIDTH, Config.WINDOW_HEIGHT) ) 
         self.clock = pygame.time.Clock()
         self.bg = pygame.image.load("res/Grill.png")
+        self.go = pygame.image.load("res/Gameover.png")
         self.bg_x = 0
         self.gameover = False
+        self.playing = False
+        self.waiting = False
         self.score=0
 
     
@@ -196,6 +201,7 @@ class Game:
             if event.type == pygame.QUIT:
                 self.playing = False
                 self.gameover = True
+                self.waiting = False
 
     def update(self):
         self.all_sprites.update()
@@ -216,14 +222,28 @@ class Game:
         self.screen.blit(textsurface,(32,32))
         pygame.display.update()
 
+
+
     def game_loop(self):
         while self.playing:                                
             self.handle_events()
             self.update()
             self.draw()
             self.clock.tick(Config.FPS)
-        self.new()
+        self.waiting = True
+        self.screen = pygame.display.set_mode( (500, 200) ) 
+        
+        while self.waiting:
+            self.screen.blit(self.go, (0, 0))
+            self.handle_events()
+            self.clock.tick(Config.FPS)
+            pygame.display.update()
 
+    def main(self):
+        while self.playing:
+            self.event()
+            self.update()
+            self.draw()
     
 def main():
     g = Game()
