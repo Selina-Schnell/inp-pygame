@@ -1,4 +1,4 @@
-     g                   g                          g
+     g                    g                       g            g                 g   g               g    g       g      
        
 
     
@@ -7,11 +7,12 @@
     
                       
     
-                                    b
-                                    bbb
-            c c                     bbb                                      
-      p      c c                     bbbb                                                  
-            c c                     bbbbbb
+                                    
+                                    
+            c c                                                           
+      p      c c                     b                       fff                          
+            c c                     b b
+                                   b b b                    fffff
 uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
 u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
 u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
