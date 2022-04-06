@@ -156,9 +156,30 @@ class PlayerSprite(BaseSprite):
 
 class GroundSprite(BaseSprite):
     def __init__(self, game, x, y):
-        super().__init__(game, x, y, groups=game.ground, layer=0)
-        self.image.fill(Config.GREEN)
+        img_data = {
+            'spritesheet': Spritesheet("res/Mais.png"),
+            'width': 54,
+            'height': 64
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)
 
+class PeperoniSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Peperoni.png"),
+            'width': 36,
+            'height': 52
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)        
+
+class FischSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Fisch.png"),
+            'width': 48,
+            'height': 48
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)    
 
 class Game:
     def __init__(self):
@@ -179,6 +200,10 @@ class Game:
                 for (x, c) in enumerate(lines):
                     if c == "b":
                         GroundSprite(self, x, y)
+                    if c == "c":
+                        PeperoniSprite(self, x, y)
+                    if c == "f":
+                        FischSprite(self, x, y)
                     if c == "p":
                         self.player = PlayerSprite(self, x, y)
 
