@@ -161,7 +161,7 @@ class PlayerSprite(BaseSprite):
 class GroundSprite(BaseSprite):
     def __init__(self, game, x, y):
         img_data = {
-            'spritesheet': Spritesheet("res/Mais.png"),
+            'spritesheet': Spritesheet("res/Mais1.png"),
             'width': 54,
             'height': 64
         }
