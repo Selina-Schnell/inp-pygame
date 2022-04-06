@@ -1,16 +1,23 @@
-    bbbbb         bbbbb 
-    bbbbbb        bbbbbb
-    bbbbbbb       bbbbbbb
-    bbbbbbb       bbbbbbb
-    b b b b       b b b b
-    b b b  b      b b b  b
-    b b b  b      b b b  b
-    b b b b       b b b b
+                        g
+       
+
     
     
-                               b
-                              bbb
-            bb               bbb                                      
-p          bbbb               bbbb                                                  
-            bb               bbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+    
+    
+                      
+    
+                                    b
+                                    bbb
+            c c                     bbb                                      
+      p      c c                     bbbb                                                  
+            c c                     bbbbbb
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u

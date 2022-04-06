@@ -1,5 +1,7 @@
 from asyncore import loop
+from email import contentmanager
 from pickle import FALSE, STOP
+from re import X
 from tracemalloc import start, stop
 from turtle import begin_fill
 import pygame
@@ -67,7 +69,9 @@ class BaseSprite(pygame.sprite.Sprite):
 class PlayerSprite(BaseSprite):
     def __init__(self, game, x, y, **kwargs):
         img_data = {
-            'spritesheet': Spritesheet("res/player.png"),
+            'spritesheet': Spritesheet("res/player3.png"),
+            'width': 32,
+            'height': 32
         }
         super().__init__(game, x, y, groups=game.players, layer=1, **img_data, **kwargs)
         self.speed = 5
@@ -156,10 +160,48 @@ class PlayerSprite(BaseSprite):
 
 class GroundSprite(BaseSprite):
     def __init__(self, game, x, y):
-        super().__init__(game, x, y, groups=game.ground, layer=0)
-        self.image.fill(Config.GREEN)
+        img_data = {
+            'spritesheet': Spritesheet("res/Mais.png"),
+            'width': 54,
+            'height': 64
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)
 
+class PeperoniSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Peperoni.png"),
+            'width': 36,
+            'height': 52
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)        
 
+class FischSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Fisch.png"),
+            'width': 48,
+            'height': 48
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)    
+
+class UntergrundSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Untergrund.jpg"),
+            'width': 32,
+            'height': 32
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)
+
+class GabelSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Gabel1.png"),
+            'width': 72,
+            'height': 286
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)    
 class Game:
     def __init__(self):
         pygame.init()
@@ -168,8 +210,11 @@ class Game:
         self.screen = pygame.display.set_mode( (Config.WINDOW_WIDTH, Config.WINDOW_HEIGHT) ) 
         self.clock = pygame.time.Clock()
         self.bg = pygame.image.load("res/Grill.png")
+        self.go = pygame.image.load("res/Gameover.png")
         self.bg_x = 0
         self.gameover = False
+        self.playing = False
+        self.waiting = False
         self.score=0
 
     
@@ -179,12 +224,20 @@ class Game:
                 for (x, c) in enumerate(lines):
                     if c == "b":
                         GroundSprite(self, x, y)
+                    if c == "c":
+                        PeperoniSprite(self, x, y)
+                    if c == "f":
+                        FischSprite(self, x, y)
+                    if c == "u":
+                        UntergrundSprite(self, x, y)
+                    if c == "g":
+                        GabelSprite(self, x, y)
                     if c == "p":
                         self.player = PlayerSprite(self, x, y)
 
     def new(self):
         self.playing = True
-
+        self.score=0
         self.all_sprites = pygame.sprite.LayeredUpdates()
         self.ground = pygame.sprite.LayeredUpdates()
         self.players = pygame.sprite.LayeredUpdates()
@@ -196,6 +249,7 @@ class Game:
             if event.type == pygame.QUIT:
                 self.playing = False
                 self.gameover = True
+                self.waiting = False
 
     def update(self):
         self.all_sprites.update()
@@ -216,14 +270,28 @@ class Game:
         self.screen.blit(textsurface,(32,32))
         pygame.display.update()
 
+
+
     def game_loop(self):
         while self.playing:                                
             self.handle_events()
             self.update()
             self.draw()
             self.clock.tick(Config.FPS)
-        self.new()
+        self.waiting = True
+        self.screen = pygame.display.set_mode( (500, 200) ) 
+        
+        while self.waiting:
+            self.screen.blit(self.go, (0, 0))
+            self.handle_events()
+            self.clock.tick(Config.FPS)
+            pygame.display.update()
 
+    def main(self):
+        while self.playing:
+            self.event()
+            self.update()
+            self.draw()
     
 def main():
     g = Game()
