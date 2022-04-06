@@ -197,9 +197,9 @@ class UntergrundSprite(BaseSprite):
 class GabelSprite(BaseSprite):
     def __init__(self, game, x, y):
         img_data = {
-            'spritesheet': Spritesheet("res/Gabel.png"),
-            'width': 400,
-            'height': 300
+            'spritesheet': Spritesheet("res/Gabel1.png"),
+            'width': 72,
+            'height': 286
         }
         super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)    
 class Game:
