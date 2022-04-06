@@ -171,8 +171,8 @@ class HandSprite(BaseSprite):
     def __init__(self, game, x, y):
         img_data = {
             'spritesheet': Spritesheet("res/Hand.jpg"),
-            'width': 347,
-            'height': 820
+            'width': 299,
+            'height': 201
         }
         super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)
 
