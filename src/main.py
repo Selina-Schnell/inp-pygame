@@ -68,6 +68,8 @@ class PlayerSprite(BaseSprite):
     def __init__(self, game, x, y, **kwargs):
         img_data = {
             'spritesheet': Spritesheet("res/player.png"),
+            'width': 32,
+            'height': 32
         }
         super().__init__(game, x, y, groups=game.players, layer=1, **img_data, **kwargs)
         self.speed = 5
@@ -181,6 +183,14 @@ class FischSprite(BaseSprite):
         }
         super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)    
 
+class UntergrundSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Untergrund.jpg"),
+            'width': 32,
+            'height': 32
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)   
 class Game:
     def __init__(self):
         pygame.init()
@@ -204,6 +214,8 @@ class Game:
                         PeperoniSprite(self, x, y)
                     if c == "f":
                         FischSprite(self, x, y)
+                    if c == "u":
+                        UntergrundSprite(self, x, y)
                     if c == "p":
                         self.player = PlayerSprite(self, x, y)
 
