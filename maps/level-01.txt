@@ -1,17 +1,15 @@
-    bbbbb         bbbbb 
-    bbbbbb        bbbbbb
-    bbbbbbb       bbbbbbb
-    bbbbbbb
-                bbbbbbb
-    b b b b       b b b b
-    b b b  b      b b b  b
-    f f f  b      b b b  b
+                        g
        
+
     
     
-                              b
-                              bbb
-            c c               bbb                                      
-p           c c               bbbb                                                  
-            c c               bbbbbb
+    
+    
+                      
+    
+                                    b
+                                    bbb
+            c c                     bbb                                      
+p           c c                     bbbb                                                  
+            c c                     bbbbbb
 uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
