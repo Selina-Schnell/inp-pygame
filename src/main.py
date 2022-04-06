@@ -201,7 +201,16 @@ class GabelSprite(BaseSprite):
             'width': 72,
             'height': 286
         }
-        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)    
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)
+
+class FeuerSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Feuer.png"),
+            'width': 23,
+            'height': 32
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)      
 class Game:
     def __init__(self):
         pygame.init()
@@ -230,6 +239,8 @@ class Game:
                         FischSprite(self, x, y)
                     if c == "u":
                         UntergrundSprite(self, x, y)
+                    if c == "e":
+                        FeuerSprite(self, x, y)
                     if c == "g":
                         GabelSprite(self, x, y)
                     if c == "p":
