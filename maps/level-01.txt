@@ -1,16 +1,17 @@
     bbbbb         bbbbb 
     bbbbbb        bbbbbb
     bbbbbbb       bbbbbbb
-    bbbbbbb       bbbbbbb
+    bbbbbbb
+                bbbbbbb
     b b b b       b b b b
     b b b  b      b b b  b
-    b b b  b      b b b  b
-    b b b b       b b b b
+    f f f  b      b b b  b
+       
     
     
                                b
                               bbb
-            bb               bbb                                      
+            c c               bbb                                      
 p          bbbb               bbbb                                                  
             bb               bbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+c f bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
