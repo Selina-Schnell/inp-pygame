@@ -167,6 +167,15 @@ class GroundSprite(BaseSprite):
         }
         super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)
 
+class HandSprite(BaseSprite):
+    def __init__(self, game, x, y):
+        img_data = {
+            'spritesheet': Spritesheet("res/Hand.jpg"),
+            'width': 347,
+            'height': 820
+        }
+        super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)
+
 class PeperoniSprite(BaseSprite):
     def __init__(self, game, x, y):
         img_data = {
@@ -243,6 +252,8 @@ class Game:
                         FeuerSprite(self, x, y)
                     if c == "g":
                         GabelSprite(self, x, y)
+                    if c == "h":
+                        HandSprite(self, x, y)
                     if c == "p":
                         self.player = PlayerSprite(self, x, y)
 
