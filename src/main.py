@@ -146,6 +146,8 @@ class PlayerSprite(BaseSprite):
 
     def check_collision(self):
         hits = pygame.sprite.spritecollide(self, self.game.ground, False)
+        if hits:
+            self.y_pos = 32
         for hit in hits:
             if self.is_standing(hit):
                 self.rect.bottom = hit.rect.top
