@@ -1,6 +1,6 @@
  
- uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-                      g                       g                         g   g               g    g       g      
+ uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+                      g                       g                         g   g               g    g       g                    g                 g     
        
 
     
@@ -9,14 +9,14 @@
                       
     
                                     
-                                    
-            c c                      b b                                     
-      p      c c                                             fff                          
-            c c                     b b b
-                                                            fffff
-uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu           
-u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u            
-u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u            
-u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u             
-u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u            
-u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u                 
+                                                                                                                                         b
+            c c                      b b                                                           c c                                   b
+      p      c c                                             fff                                  c c                                    b
+            c c                     b b b                                                        c c                                     b
+                                                            fffff                                                                        b
+uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu        
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u           
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u            
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u          
+u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u                  
