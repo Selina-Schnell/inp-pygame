@@ -101,7 +101,7 @@ class PlayerSprite(BaseSprite):
         self.y_velocity -= 0.5
         self.handle_movement()
         self.check_collision()
-        if self.hit and self.counter > 10:
+        if self.hit and self.counter > 9:
             self.game.playing = False
         else:
             self.counter += 1
