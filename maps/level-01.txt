@@ -3,17 +3,18 @@
                       g                       g                         g   g               g    g       g                    g                 g     
        
 
-    
+
+
 
     
                       
     
                                     
                                                                                                                                          b
-            c c                      b b                                                           c c                                   b
-      p      c c                                             f f f                                c c                                    b
-            c c                     b b b                                                        c c                                     b
-                                                            f f f f f                                                                        b
+            c c                      b b                      f f                                            c c                                   b
+      p      c c                                                                      e                     c c                                    b
+            c c                     b b b                  f   f   f                e   e                 c c                                     b
+                                                                                   e     e                                                      b
 uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu        
 u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
 u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u           

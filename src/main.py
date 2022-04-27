@@ -227,7 +227,7 @@ class FeuerSprite(BaseSprite):
     def __init__(self, game, x, y):
         img_data = {
             'spritesheet': Spritesheet("res/Feuer.png"),
-            'width': 23,
+            'width': 32,
             'height': 32
         }
         super().__init__(game, x, y, groups=game.ground, layer=0, **img_data)      
