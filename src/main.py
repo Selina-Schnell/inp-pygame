@@ -166,8 +166,7 @@ class PlayerSprite(BaseSprite):
             self.y_pos = 32
             self.counter = 0
             self.hit = True
-
-
+            
 
 class GroundSprite(BaseSprite):
     def __init__(self, game, x, y):
