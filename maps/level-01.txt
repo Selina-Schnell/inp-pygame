@@ -11,9 +11,9 @@
                                     
                                                                                                                                          b
             c c                      b b                                                           c c                                   b
-      p      c c                                             fff                                  c c                                    b
+      p      c c                                             f f f                                c c                                    b
             c c                     b b b                                                        c c                                     b
-                                                            fffff                                                                        b
+                                                            f f f f f                                                                        b
 uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu        
 u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u
 u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u  u           
