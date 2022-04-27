@@ -82,6 +82,7 @@ class PlayerSprite(BaseSprite):
         self.animation_duration = 30
         self.y_velocity = 10
         self.counter = 0
+        self.hit = False
         
 
     def animate(self, x_diff):
@@ -100,7 +101,7 @@ class PlayerSprite(BaseSprite):
         self.y_velocity -= 0.5
         self.handle_movement()
         self.check_collision()
-        if self.counter > 60:
+        if self.hit and self.counter > 60:
             self.game.playing = False
         else:
             self.counter += 1
@@ -163,7 +164,9 @@ class PlayerSprite(BaseSprite):
                 self.rect.top = hit.rect.bottom
                 break
             self.y_pos = 32
-            self.counter = 0          
+            self.counter = 0
+            self.hit = True
+
 
 
 class GroundSprite(BaseSprite):
